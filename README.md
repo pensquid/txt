@@ -1,2 +1,3 @@
-# txt
-A barebones private uploader for text files
+# TXT
+
+A barebones private uploader for text files.
