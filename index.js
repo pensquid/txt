@@ -15,7 +15,7 @@ const directory = 'files/'
 if (!fs.existsSync(directory)) fs.mkdirSync(directory)
 
 const app = express()
-app.use(bodyParser.text())
+app.use(bodyParser.text({ limit: '50mb' }))
 
 app.get('/', (req, res) => res.redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ'))
 
